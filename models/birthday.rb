@@ -1,5 +1,5 @@
 class Birthday < Base
-  key :user_id, Integer
+  key :user_id, ObjectId
 
   key :name, String
   key :telegram_login, String

@@ -6,10 +6,12 @@ services:
       - "3000:3000"
     links:
       - mongo
+    stdin_open: true
+    tty: true
   mongo:
     image: mongo
     volumes:
-      - /data/db:/data/db
+      - ./data/db:/data/db
     ports:
       - "27017:27017"
     # logging:
